@@ -1,0 +1,13 @@
+backend:
+  name: github
+  repo: owner/repo
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+collections:
+  - name: "post"
+    label: "Post"
+    folder: "_posts"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
