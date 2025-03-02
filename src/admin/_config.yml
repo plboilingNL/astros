@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: owner/repo
+  name: git-gateway
+  branch: main
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
 collections:
@@ -11,3 +11,4 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+
