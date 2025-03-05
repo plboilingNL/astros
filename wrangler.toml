@@ -1,4 +1,4 @@
-name = "astros"
+name = "astros2"
 main = "src/worker.js"
 compatibility_date = "2025-03-05"
 workers_dev = false
