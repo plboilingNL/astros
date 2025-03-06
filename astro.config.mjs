@@ -17,12 +17,7 @@ export default defineConfig({
 			__DATE__: `'${new Date().toISOString()}'`,
 		},
 	},
-	output: "server",
-  server: {
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-    },
-  },
+	
 	integrations: [
 		tailwind(),
 		sitemap(),
