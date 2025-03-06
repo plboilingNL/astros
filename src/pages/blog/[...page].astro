@@ -10,14 +10,14 @@ import i18next, { changeLanguage } from "i18next";
 changeLanguage("en");
 
 export async function getStaticPaths({ paginate }) {changeLanguage('en')
-    var posts = await getCollection("blog", ({ data }) => {
+    const posts = await getCollection("blog", ({ data }) => {
         return !data.draft;
     });
     // Preprocess the posts to split the slugs and get the languages
-    var processedPosts = posts.map((post) => {
+    const processedPosts = posts.map((post) => {
         const [...slug] = post.slug.split("/");
         let lang = i18next.language;
-        var firstSlug = post.slug.match(/^([^\/]*)\//);
+        const firstSlug = post.slug.match(/^([^\/]*)\//);
         if (firstSlug) {
             lang = firstSlug[1];
         }

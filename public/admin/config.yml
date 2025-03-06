@@ -6,7 +6,7 @@ backend:
     name: "github"
     repo: plboilingNL/astros
     branch: main
-    base_url: https://deskcode.nl
+    base_url: https://www.deskcode.nl
     automatic_deployments: false
 
 media_folder: "public/images"
